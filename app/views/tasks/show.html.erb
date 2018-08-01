@@ -1,0 +1,21 @@
+
+<div class ="task-head">
+  <p>Task:</p>
+</div>
+
+<div class = "task-info">
+  <p><%= @task.title %></p>
+</div>
+
+<div class ="task-head">
+  <p>Details:</p>
+</div>
+
+<div class = "task-info">
+  <p><%= @task.details %></p>
+</div>
+
+<p><%= @task.completed %></p>
+
+
+<%= button_to "Back to list", list_path, method: :get %>
